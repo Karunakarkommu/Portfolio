@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+.{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+.header-sec{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 80px;
+    background-color:#2d2d2d
+    display flex;
+    align-items:center
+    justify-content space-between
+    overflow hidden
+    z-index 100
+}
+nav{
+    background: transparent;
+    height: 90px;
+    width: 100%;
+}
+label.logo{
+    color: #fff;
+    font-size: 35px;
+    line-height: 86px;
+    font-weight: 700;
+}
+.logo span{
+    color: #ff0077;
+}
+nav ul{
+    float: right;
+}
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 5px;
+}
+nav ul li a{
+    text-decoration: none;
+    list-style: none;
+    color: #fff;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+a.active,a:hover{
+    background: #ff0077;
+    transition:0.05s
+}
+checkbtn{
+    font-size: 30px;
+    color: #ff0077;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+@media screen and (max-width: 952px) {
+    label.logo{
+        font-size: 20px;
+    }    
+}
+@media screen and (max-width: 858px){
+    checkbtn{
+        display: block;
+        font-size: 26px;
+        margin-top: 5px;    
+    }
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #2b222b;
+        top: 80px;
+        left: -100px;
+        text-align: center;
+        transition: all 0.5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 10px;
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+    a:hover,a.active{
+        background: none;
+        color: #ff0077;
+    }
+    #chec:checked ul{
+        left: 0;
+    }
+}
+.hero{
+    background-image: url(https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhSXoIuv90Zdle7DQbtcaxCDNU2xrOFcqG3WO-MElsczs941EuFB_sRBncM5kxIN1K9w9xpdsKIZUlHgVEaMi84-rbiQqsjxlWorjVI339xMzH3qV5xWUDPnc5HDNB3TVCvba0aPXeDylYp3akxeeA7tWqoXlWKh6UIRdlfci9acaDQgUpadEmrbK0aGoaV/s320/PicsArt_05-15-02.58.48.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: color;
+    height:100vh;
+    display:flex;
+    align-items:center;
+    padding:0 80px;
+}
+.hero-content{
+    width: 600px;
+}
+.hero-content h1{
+    color: #ebebeb;
+    font-size: 50px;
+    font-weight: 700px;
+    line-height: 60px;
+    padding-top: 80px;
+}
+.hero-content h2{
+    color: #ff0077;
+    font-size: 34px;
+    font-weight: 600;
+}
+.hero-content p{
+    font-size: 16px;
+    color: #ebebeb;
+    line-height: 26px;
+    margin: 20px 0 40px;
+}
+.btn-box{
+    display: flex;
+    justify-content: space-between;
+    width: 350px;
+    height: 50px;;
+}
+.btn-box a{
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 100%;
+    background: #2b222b;
+    border: 2px solid #ff0077;
+    border-radius: 8px;
+    font-size: 18px;
+    color: #ff0077;
+    text-decoration: none;
+    letter-spacing: 1px;
+    font-weight: 600;
+    z-index: 1;
+    overflow: hidden;
+    transition: 0.5s;
+}
+.btn-box a:hover{
+    color: #fff;
+}
+.btn-box a:nth-child(2){
+    background: transparent;
+    color:#ff0077;
+}
+.btn-box a:nth-child(2):hover{
+    color: #ebebeb;
+}
+.btn-box a:nth-child(2)::before{
+    background: #ff0077;
+}
+.btn-box a ::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 0;
+    height: 100%;
+    background: #000000;
+    z-index: -1;
+    border-radius: 8px;
+    transition: 0.5s;
+}
+.btn-box a :hover ::before{
+    width: 100%;
+}
+.social-icon{
+    position: fixed;
+    bottom: 40px;
+    width: 170px;
+    display: flex;
+    justify-content: space-between;
+}
+.social-icon a{
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: #c8ff00;
+    font-size: 20px;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid #ff0077;
+    text-decoration: none;
+    border-radius: 50px;
+    z-index: 1;
+    overflow: 0.05s;
+}
+.social-icon a ::before{
+    height: 100%;
+    background: #ff0077;
+    color: blanchedalmond;
+    z-index: -1;
+    border-radius: 8px;
+    transition: 0.5s;
+}
+.social-icon a :hover ::before{
+    width: 100%;
+}
