@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name=u"viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <header class="header-sec">
+        <nav>
+            <input type="checkbox" id="check">
+            <label for="checkbox" id="checkbtn"></label>
+            <li class="fa fa-bars"></li>
+            <label class="logo">karunakar<span>  kommu</span></label>
+            <ul>
+                <li><a class="active" href="#">home</a></li>
+                <li><a href="#">about</a></li>
+                <li><a href="#">service</a></li>
+                <li><a href="#">portfolio</a></li>
+                <li><a href="#">contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="hero">
+        <div class="hero-content">
+            <h1> I am karunakar</h1>
+            <h2>frontend Developer</h2>
+           <p>As a passion frontend developer,i have on transforming creative vision into design and mastrey of html and css ,i specialized in creating user friendly.my portfolio show the diverse range of project ,each a testment to my  commitment to clean code, I bring my innovation and precision to every project i undertake.Explore my portfolio withness the seamless fusion of technology & design.where user experience takes center stage.</p>
+           <div class="btn-box">
+            <a href="#">Hire Me</a>
+            <a href="#">Lets Talk</a>
+           </div>
+        </div>
+        <div class="social-icon">
+            <a href="#"><i class='bx bxl-facebook-circle'></i></a>
+
+            <a href="#"><i class='bx bxl-twitter' ></i></a>
+
+            <a href="#"><i class='bx bxl-instagram' ></i></a>
+            
+        </div>
+    </section>
+</body>
+</html>
